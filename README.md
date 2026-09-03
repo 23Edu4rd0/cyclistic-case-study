@@ -1,33 +1,32 @@
+# Cyclistic - Case Study
 
-# Cyclistic - Estudo de caso
+Analysis of how annual members and casual riders use Cyclistic bikes differently, aiming to support a marketing strategy to convert casual riders into annual members.
 
-Análise de como membros anuais e passageiros casuais usam as bicicletas da Cyclistic de forma diferente, com o objetivo de embasar uma estratégia de marketing para converter passageiros casuais em membros anuais.
+## Data
 
-## Dados
+Last 12 months of trip data (August/2025 to July/2026) from the Divvy bike-share system (Chicago), publicly provided by Motivate International Inc: https://divvy-tripdata.s3.amazonaws.com/index.html
 
-Últimos 12 meses de viagens (agosto/2025 a julho/2026) do sistema de bicicletas compartilhadas Divvy (Chicago), disponibilizados publicamente pela Motivate International Inc: https://divvy-tripdata.s3.amazonaws.com/index.html
+The `.csv` files are not included in this repository. To reproduce the analysis, download the files for the desired period from the link above and place them in the `data/tcc/` folder.
 
-Os arquivos `.csv` não estão incluídos neste repositório. Para reproduzir a análise, baixe os arquivos do período desejado no link acima e coloque-os na pasta `data/tcc/`.
-
-## Como rodar
+## How to run
 
 ```bash
 pip install -r requirements.txt
 jupyter notebook main.ipynb
 ```
 
-## Estrutura do notebook
+## Notebook structure
 
-- Introdução e tarefa de negócio
-- Limpeza e preparação dos dados
-- Processamento (loop mensal com cálculo de duração, distância, dia da semana e estações)
-- Visualizações
-- Resumo da análise
-- Recomendações
+- Introduction and business task
+- Data cleaning and preparation
+- Processing (monthly loop calculating duration, distance, day of week and stations)
+- Visualizations
+- Analysis summary
+- Recommendations
 
-## Principais achados
+## Key findings
 
-- Membros concentram uso em dias úteis, partindo majoritariamente de estações no distrito comercial (Loop); casuais concentram uso em fins de semana, partindo de pontos turísticos/recreativos (Navy Pier, orla do lago).
-- Parte dos membros adota comportamento tipo-casual nos fins de semana, migrando para estações turísticas.
-- Ambos os grupos preferem bicicleta elétrica à clássica, mesmo com distância percorrida semelhante entre os dois tipos — a diferença está na velocidade, não na distância.
-- Forte sazonalidade: queda no volume no inverno (dez-fev), pico no verão (jun-jul).
+- Members concentrate usage on weekdays, mostly departing from stations in the business district (the Loop); casual riders concentrate usage on weekends, mostly departing from touristic/recreational spots (Navy Pier, the lakefront).
+- A portion of members adopt casual-like behavior on weekends, shifting toward touristic stations.
+- Both groups prefer electric bikes over classic ones, despite similar distances traveled between the two types — the difference lies in speed, not distance.
+- Strong seasonality: usage drops in winter (Dec-Feb) and peaks in summer (Jun-Jul).
